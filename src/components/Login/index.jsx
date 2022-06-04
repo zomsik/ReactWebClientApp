@@ -25,7 +25,7 @@ const Login = () => {
             const { data: res } = await axios.post(url, data)
             createNotification('success',"Zalogowano", "Pomyślnie zalagowano na konto")
             localStorage.setItem("token", res.data)
-            window.location = "/"
+            window.location = "/ReactWebClientApp/"
         } catch (error) {
             if (error.response && error.response.status >= 400 && error.response.status <= 500) 
             {
@@ -56,7 +56,7 @@ const Login = () => {
                 <div className={styles.right}>
 
                     <h1>Nie masz konta?</h1>
-                    <Link to="/signup">
+                    <Link to="/ReactWebClientApp/signup">
                         <button type="button" className={styles.link_btn}> Zarejestruj się </button>
                     </Link>
                 </div>

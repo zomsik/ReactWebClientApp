@@ -23,7 +23,7 @@ function Navbar() {
 
     const handleLogout = () => {
         localStorage.removeItem("token")
-        navigate("/")
+        navigate("/ReactWebClientApp/")
         window.location.reload()
     }
 
@@ -33,9 +33,9 @@ function Navbar() {
             <NavbarInnerContainer>
                 <LeftContainer>
                     <NavbarLinkContainer>
-                        <NavbarMenuLink to="/">Menu</NavbarMenuLink>
-                        <NavbarLink to="/dane">Pobierz dane</NavbarLink>
-                        <NavbarLink to="/zapisane">Zapisane wykresy</NavbarLink>
+                        <NavbarMenuLink to="/ReactWebClientApp/">Menu</NavbarMenuLink>
+                        <NavbarLink to="/ReactWebClientApp/dane">Pobierz dane</NavbarLink>
+                        <NavbarLink to="/ReactWebClientApp/zapisane">Zapisane wykresy</NavbarLink>
 
                         <OpenLinksButton
                             onClick={() => {
@@ -48,17 +48,17 @@ function Navbar() {
                 </LeftContainer>
 
                 <RightContainer>
-                    <NavbarLink to="/profil">Profil</NavbarLink>
-                    <NavbarLink to="/" onClick={handleLogout} >Wyloguj się</NavbarLink>
+                    <NavbarLink to="/ReactWebClientApp/profil">Profil</NavbarLink>
+                    <NavbarLink to="/ReactWebClientApp/" onClick={handleLogout} >Wyloguj się</NavbarLink>
                 </RightContainer>
             </NavbarInnerContainer>
 
             {extendNavbar && ( <NavbarExtendedContainer>
-                <NavbarMenuLinkExtended to="/"> Menu</NavbarMenuLinkExtended>
-                <NavbarLinkExtended to="/dane">Pobierz dane</NavbarLinkExtended>
-                <NavbarLinkExtended to="/zapisane">Zapisane wykresy</NavbarLinkExtended>
-                <NavbarLinkExtended to="/profil">Profil</NavbarLinkExtended>
-                <NavbarLinkExtended to="/" onClick={handleLogout} >Wyloguj się</NavbarLinkExtended>
+                <NavbarMenuLinkExtended to="/ReactWebClientApp/"> Menu</NavbarMenuLinkExtended>
+                <NavbarLinkExtended to="/ReactWebClientApp/dane">Pobierz dane</NavbarLinkExtended>
+                <NavbarLinkExtended to="/ReactWebClientApp/zapisane">Zapisane wykresy</NavbarLinkExtended>
+                <NavbarLinkExtended to="/ReactWebClientApp/profil">Profil</NavbarLinkExtended>
+                <NavbarLinkExtended to="/ReactWebClientApp/" onClick={handleLogout} >Wyloguj się</NavbarLinkExtended>
                 </NavbarExtendedContainer>
             )}
         </NavbarContainer>

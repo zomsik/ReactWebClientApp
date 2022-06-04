@@ -14,7 +14,7 @@ const Main = () => {
             <div className="col-lg-6 mb-5 col-sm-12">
                 <div className="card h-100">
                     <div className="embed-responsive embed-responsive-16by9">
-                        <Link to="/dane"> <Image src={require('../../assets/save-data.png')} className="card-img-top " /></Link>
+                        <Link to="/ReactWebClientApp/dane"> <Image src={require('../../assets/save-data.png')} className="card-img-top " /></Link>
                     </div>
                     <div className="card-block">
                         <br></br>
@@ -27,7 +27,7 @@ const Main = () => {
             <div className="col-lg-6 mb-5 col-sm-12">
                 <div className="card h-100">
                     <div className="embed-responsive embed-responsive-16by9">
-                        <Link to="/zapisane"> <Image src={require('../../assets/view-data.png')}  className="card-img-top " /></Link>
+                        <Link to="/ReactWebClientApp/zapisane"> <Image src={require('../../assets/view-data.png')}  className="card-img-top " /></Link>
                     </div>
                     <div className="card-block">
                         <br></br>

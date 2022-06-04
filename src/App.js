@@ -10,13 +10,13 @@ function App() {
 const user = localStorage.getItem("token")
 return (
 <Routes>
-{user && <Route path="/" exact element={<Main />} />}
-<Route path="/signup" exact element={<Signup />} />
-<Route path="/login" exact element={<Login />} />
-<Route path="/profil" exact element={<Profil />} />
-<Route path="/dane" exact element={<Dane />} />
-<Route path="/zapisane" exact element={<Zapisane />} />
-<Route path="/" element={<Navigate replace to="/login" />} />
+{user && <Route path="/ReactWebClientApp/" exact element={<Main />} />}
+<Route path="/ReactWebClientApp/signup" exact element={<Signup />} />
+<Route path="/ReactWebClientApp/login" exact element={<Login />} />
+{user && <Route path="/ReactWebClientApp/profil" exact element={<Profil />} />}
+{user && <Route path="/ReactWebClientApp/dane" exact element={<Dane />} />}
+{user && <Route path="/ReactWebClientApp/zapisane" exact element={<Zapisane />} />}
+<Route path="/ReactWebClientApp/" element={<Navigate replace to="/ReactWebClientApp/login" />} />
 </Routes>
 
 

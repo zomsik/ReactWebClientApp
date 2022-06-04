@@ -43,7 +43,7 @@ const Signup = () => {
                 <div className={styles.left}>
                     
                     <h1>Masz już konto?</h1>
-                    <Link to="/login">
+                    <Link to="/ReactWebClientApp/login">
                         <button type="button" className={styles.link_btn}> Zaloguj się </button>
                     </Link>
                 </div>

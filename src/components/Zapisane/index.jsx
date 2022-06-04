@@ -106,7 +106,7 @@ const Zapisane = () => {
 
         {(!loadedData.length && isFetched)  ?
         <div className={styles.centerButton}>
-            <Link to="/dane">
+            <Link to="/ReactWebClientApp/dane">
             <Button className={styles.loadButton}>Zapisz jakiś wykres, aby go wyświetlić w tej sekcji</Button>
             </Link>
         </div>

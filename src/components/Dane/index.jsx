@@ -140,6 +140,21 @@ const Dane = () => {
     }
 
 
+    const PobierzWykres = () => {
+        // Wymaganie funkcjonalne 2
+
+        const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(JSON.stringify(daneWykresu))}`;
+
+        const link = document.createElement("a");
+        
+        link.href = jsonString;
+        link.download = select1.value + " - " + select2.value + ", " + select3.value + ".json";
+      
+        link.click();
+        
+    }
+
+
     useEffect(() => {
         if (select1.value && select2.value && select3.value )
         {
@@ -324,6 +339,8 @@ const Dane = () => {
     <br/><br/>
         
         <Button variant="outline-primary" onClick={ZapiszWykres}> Zapisz wykres w ulubionych </Button> 
+		 <br/><br/>
+        <Button variant="outline-primary" onClick={PobierzWykres}> Pobierz wykres </Button> 
         </>
         :
         null

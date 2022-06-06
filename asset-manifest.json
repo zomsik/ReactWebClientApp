@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ReactWebClientApp/static/css/main.23e74118.css",
-    "main.js": "/ReactWebClientApp/static/js/main.303d6830.js",
+    "main.css": "/ReactWebClientApp/static/css/main.364d478b.css",
+    "main.js": "/ReactWebClientApp/static/js/main.8df50f96.js",
     "static/media/view-data.png": "/ReactWebClientApp/static/media/view-data.ca04d4766e40b953dfc8.png",
     "static/media/notification.svg?s3g3t9": "/ReactWebClientApp/static/media/notification.5d0158671dd860c714c4.svg",
     "static/media/notification.eot": "/ReactWebClientApp/static/media/notification.3657084dc0419605a91c.eot",
     "static/media/notification.woff?s3g3t9": "/ReactWebClientApp/static/media/notification.c392cd33d9d9de730f9d.woff",
     "static/media/notification.ttf?s3g3t9": "/ReactWebClientApp/static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "/ReactWebClientApp/index.html",
-    "main.23e74118.css.map": "/ReactWebClientApp/static/css/main.23e74118.css.map",
-    "main.303d6830.js.map": "/ReactWebClientApp/static/js/main.303d6830.js.map"
+    "main.364d478b.css.map": "/ReactWebClientApp/static/css/main.364d478b.css.map",
+    "main.8df50f96.js.map": "/ReactWebClientApp/static/js/main.8df50f96.js.map"
   },
   "entrypoints": [
-    "static/css/main.23e74118.css",
-    "static/js/main.303d6830.js"
+    "static/css/main.364d478b.css",
+    "static/js/main.8df50f96.js"
   ]
 }

@@ -25,7 +25,7 @@ const Signup = () => {
             const url = "https://expressapp.azurewebsites.net/api/users"
             await axios.post(url, data)
             createNotification('success',"Utworzono konto", "Pomyślnie utworzono konto")
-            navigate("/login")
+            navigate("/ReactWebClientApp/login")
             
         } catch (error) {
             if (error.response && error.response.status >= 400 && error.response.status <= 500) 
